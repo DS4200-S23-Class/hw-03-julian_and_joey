@@ -1,11 +1,21 @@
-body {
+.body {
     font-family: Arial;
+    padding: 0;
+    margin: 0;
 }
 
-h1 {
+.h1 {
     text-align: center;
 }
 
 .container {
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.child {
+    width: 50%;
+}
+
+.child2 {
+    width: 50%;
 }
