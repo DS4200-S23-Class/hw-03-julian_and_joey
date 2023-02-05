@@ -1,0 +1,11 @@
+body {
+    font-family: Arial;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    flex-direction: column;
+}
