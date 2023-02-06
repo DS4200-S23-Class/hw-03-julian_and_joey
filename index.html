@@ -14,33 +14,85 @@
         <div class="child">
             <img class="item" src= img\vis1.png>
             <img class="item" src= img\vis2.png>
+            <img class="item2" src= img\vis3.png>
         </div>
         <div class="child2">
-            <ul>
-                <li>Marks: 
+            <div class="text1">
+                <p class="bold">Marks:</p><ul>
                     <li>Areas (For both the bar above the map of the US, and the map of the US)</li>
-                    <li>Points (For the </li>
-                </li>
-                <li>Channels:
+                    <li>Points (For the statewide and district electoral votes)</li>
+                </ul>
+                <p class="bold">Channels:</p><ul>
                     <li>Color- The attribute color is representing if the state voted for the republican or 
                         democratic candidate. This is a great choice, because naturally, people associate a state to 
                         be colored red if it leans right politically, and blue if it leans left.</li>
                     <li>Position- The position attribute represents where the state is geographically
                         located. When representing geographical data, is it often favored to have the channel 
                         position. This is because one can reference the geographical area to others around it
-                        quite easily.
+                        quite easily.</li>
+                    <li>Length- The length of the statewide and district electoral votes represents how many
+                        statewide and district the two states have. If the length of red boxes for Nebraska's
+                        district votes is longer, than we can infer there were more district votes that were
+                        for the republican candidate in Nebraska. This is a solid choice, as length is a great
+                        method to analyze the magnitude, the issue with this aspect of the visualization is more
+                        the random placement of a red point between two points.</li>
+                </ul>
+                <p class="bold">Colormap(s):</p><ul>
+                    <li>Divergent: The divergent colormap of red and blue represents the attribute of which party the
+                        state voted. Although there are only two colors, we can assume this graph is divergent, because
+                        people often refer to the political spectrum when looking at voting data. For instance, light blue
+                        would represent a moderate democratic state, wheras a darker blue would represent a radical democratic
+                        state.</li>
+                </ul>
+            </div>
+            <div class="text2">
+                <p class="bold">Mark:</p><ul>
+                    <li>Points</ul></li>
+                <p class="bold">Channels:</p><ul>
+                <li>Color- The color of each point represents the scoring value for each hit. This is a great way to
+                    show the value of index, because the more orange the hue, the better the hit. Alternatively, the more
+                    purple hue in a point, the worse the point fell on the LWTS scale.</li>
+                <li>Position (Both)- The position of the point is very important. The higher the point is on the graph, the higher
+                    angle the ball was it. The farther right the point is located on the graph, the more exit velocity the ball
+                    had. Thus position is representing both the exit velocity of the ball and the launch angle attributes. This is a 
+                    very good choice for a channel, because the graph can be more simple by reprsenting two attributes simulteously.
+                    If we were to represent velocity by area and angle by shape, this graph would become extremely confusing.</li>
+                </ul>
+                <p class="bold">Colormap(s):</p><ul>
+                    <li>Divergent: The divergent colormap of yellow and purple respresents the attribute of scoring value. This is 
+                        not the best use of a colormap. Hits that are colored purple aren't negative scoring hits. They can still 
+                        represent a positive value, they are just below the average. Perhaps a sequential colormap would be a more
+                        proper colormap given we are working with scoring value data.
+                     
+                </ul>
+                <div class="text3">
+                    <p class="bold">Mark:</p><ul>
+                        <li>Lines</ul></li>
+                    <p class="bold">Channels:</p><ul>
+                    <li>Color- The color hue of the lines represents the attribute region. We think color hue was a good choice, because
+                        color is one of the main ways to separate categorical data.
                     </li>
-                    
-                </li>
-                <li>Channel: Color</li>
-                    <li>Channel: Length</li>
-            </ul>
-
+                    <li>Position (Both)- The position of the line is very important. The height of the line represents the biodiversity
+                        index (how biologically diverse the region is), the width of the line simply represents time. (1970-2018) 
+                        This is a good choice because size channels could confuse the viewer, and shape would be redundant with color,
+                        and thus would have no added benefit.</li>
+                    </ul>
+                    <p class="bold">Colormap(s):</p><ul>
+                        <li>
+                            Categorical- The colors represent the attribute region. The regions have no inherent relation to each other,
+                            so it would not make sense to use a sequential or divergent colormap.
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Acknowledgements</h2>
+        <div>
             <ul>
-                <li>Mark: Points
-                    <li>Channel: Color</li>
-                    <li>Channel: Position</li>
-                </li>
+                <li>https://www.tutoialspoint.com/css/css_postioning.htm</li>
+                <li>w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html</li>
+                <li>kaggle.com/datasets/elmoallistair/living-planet-index?resource=download</li>
             </ul>
         </div>
     </div>
