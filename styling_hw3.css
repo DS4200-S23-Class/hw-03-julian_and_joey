@@ -3,7 +3,7 @@ body {
 }
 
 .item2 {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
@@ -28,12 +28,19 @@ body {
 .text3 {
     display:inline;
     position:absolute;
-    left:675px;
-    top:800px;
+    left:0px;
+    top:900px;
 }
+.text4 {
+    text-align: center;
+    display:inline;
+    position:absolute;
+    top:2000px;
+}
+
 .h1 {
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .h2 {
